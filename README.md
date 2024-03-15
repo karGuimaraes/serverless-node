@@ -32,8 +32,8 @@ Este projeto consiste em uma função lambda que é acionada por eventos S3 e co
 5. Para fazer deploy na AWS execute:
 
   ```bash
-    npm run deploy
-    ```
+npm run deploy
+```
 
 ## Configuração
 
