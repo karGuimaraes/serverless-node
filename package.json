@@ -1,0 +1,28 @@
+{
+  "name": "serverless-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "optimize.js",
+  "dependencies": {
+    "aws-sdk": "^2.1578.0",
+    "color": "^4.2.3",
+    "color-convert": "^2.0.1",
+    "color-name": "^1.1.4",
+    "color-string": "^1.9.1",
+    "detect-libc": "^2.0.2",
+    "is-arrayish": "^0.3.2",
+    "lru-cache": "^6.0.0",
+    "semver": "^7.6.0",
+    "sharp": "^0.33.2",
+    "simple-swizzle": "^0.2.2",
+    "yallist": "^4.0.0"
+  },
+  "scripts": {
+    "predeploy": "rmdir /S /Q node_modules\\sharp && npm install --platform=linux --arch=x64 --target=20.x sharp",
+    "deploy": "serverless deploy --verbose",
+    "postdeploy": "rmdir /S /Q node_modules\\sharp && npm install sharp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
